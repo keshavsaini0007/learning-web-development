@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_box_model</title>
+    <style>
+        .box {
+            /* background-color: aqua; */
+        }
+
+        .box1 {
+            background-color: aqua;
+            color: rgb(0, 128, 255);
+            margin: 25px; /* M -> B -> P*/
+            border: 2px solid rgb(138, 46, 229);
+            padding: 9px;
+            height: 55px;
+            box-sizing: border-box;  
+            /*it means that border to box height is equal to 55px 
+            that is declared before*/
+
+        }
+
+        .box2 {
+            background-color: rgb(132, 0, 255);
+            color: rgb(255, 81, 0);
+            margin: 40px; /* M -> B -> P*/
+            border: 2px solid rgb(229, 125, 46);
+            padding: 9px;
+            height: 55px;
+        }
+
+        /*margin collaps : it overlaping of the margin 
+        the gap fullfill accourding maximum marging */
+    </style>
+</head>
+
+<body>
+    <div class="box box1">this is a box1</div>
+    <div class="box box2">this is a box2</div>
+</body>
+
+</html>
