@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+    <style>
+        
+        .divem{
+            margin: 0px;
+            border: solid rgb(4, 29, 255) 2px;
+            height: 50em;
+            width: 50em;
+            margin: 0px; /*it will not work...*/
+        }
+
+        .box{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(198, 236, 57);
+            border: solid blueviolet;
+            /*width: 200px;*/
+            width: 1000px;    /*vw and vh units are based on % ratio of screen*/
+            height: 1000px;
+            /*margin: auto;*/
+            /*(margin: auto) is used to centeralize the box element*/
+            /*Note: we can't centeralize the the inline elements*/
+        }
+
+        .container{
+            box-sizing: border-box;
+            background-color: rgb(39, 235, 14);
+            margin: 0px;
+            border: 2px;
+            border: solid rgb(255, 0, 0) 2px;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .vbox{
+            margin: 0px;
+            border: solid black 2px;
+            height: 100vmin;
+            width: 100vmin;
+            background-color: rgb(0, 119, 255);
+        }
+
+        .Adjustable_height{
+            background-color: blueviolet;
+            color: aqua;
+            border: solid rgb(226, 90, 12);
+            margin: 0px;
+            min-height: 80vh;
+            width: 100vw;
+        }
+
+        .main{
+            background-color: bisque;
+            margin: 0%;
+            border: solid black;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+        .main > child{
+            margin: 0%;
+            border: solid black;
+            height: 50%;
+            width: 50%;
+        }
+        /* .main > child > childs{
+            margin: 0%;
+            border: solid black;
+            height: 50%;
+            width: 50%;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        hey this is div using height :- 1000px and width :- 1000px
+    </div>
+    <div class="divem">
+        hey this is div using   height: 50em and width: 50em
+        Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size.
+    </div>
+
+    <div class="container">
+        hey this is also a div height: 100vh  and  width: 100vw
+    </div>
+
+    <div class="vbox">
+        hey this is for vmin using height: 100vmin and width: 100vmin
+    </div>
+
+    <div class="Adjustable_height"> 
+        this is div using adjustable height but fixed width :->  min-height: 80vh  and width: 100vw
+        <br> <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, eos ullam? Eligendi, dolorum illo, voluptatum itaque labore quibusdam ab, iusto placeat ratione ullam ipsa quasi. Modi natus quo deleniti eligendi mollitia, fugiat soluta praesentium distinctio ipsa adipisci ea reprehenderit perspiciatis, culpa neque rerum! Illum officia quia inventore sapiente, error totam corporis voluptatem tempore blanditiis. Sequi nobis labore possimus, exercitationem distinctio fugit ducimus ipsa neque perspiciatis laborum, laudantium similique voluptas adipisci officiis ex minus explicabo eligendi rem commodi accusamus! Placeat, sint amet quos dolor nemo explicabo fugiat vero quasi molestiae error facere deserunt, modi quisquam, recusandae hic. Illum ex reprehenderit rem molestiae excepturi delectus magni, nobis quas enim laudantium nam nemo, suscipit corporis fuga debitis ducimus consectetur cum! Debitis sed quam laboriosam at eligendi tempore nobis nemo ab ducimus doloremque! Tempore harum architecto quo voluptatum, repudiandae necessitatibus vel expedita quaerat quis itaque minus libero sint nisi aspernatur sunt deleniti rem debitis ducimus explicabo deserunt. Debitis recusandae quasi suscipit ad vel aliquid quis doloribus blanditiis! Excepturi commodi cum, illo optio obcaecati non minima vel eos voluptatum maiores nostrum assumenda eaque facilis reiciendis incidunt accusamus temporibus nulla. Ea et eius itaque! Ullam corporis eos facilis excepturi at esse similique animi inventore iste eum nemo dolorem nisi minima blanditiis sit, atque, saepe cupiditate veniam. Sequi, pariatur cupiditate accusamus accusantium earum culpa quaerat temporibus numquam voluptate, atque voluptas error impedit assumenda, aliquid perferendis deserunt. Sint nemo eveniet adipisci ipsum possimus, amet facere maiores modi facilis voluptate? Beatae voluptatum aliquam aliquid animi ab porro, odit sequi dolorem repellat ea autem nihil sapiente voluptatibus natus molestias quis doloribus. Veniam voluptatem impedit numquam asperiores voluptates amet quis! Distinctio quisquam ipsum quam possimus natus dolores eaque voluptas nostrum tempore esse aut autem aliquid, sapiente quaerat eius dolorem qui exercitationem architecto. Accusamus nemo corporis veritatis? Aliquid ipsam quod sit molestiae perferendis omnis corporis maxime pariatur officia dignissimos voluptates culpa porro adipisci accusantium laborum tempora amet, dolor asperiores nisi praesentium assumenda, earum magnam expedita? Vel eum qui ipsa, rerum quae autem delectus repellat obcaecati magni doloribus reiciendis inventore necessitatibus, ipsum praesentium, odio temporibus provident. Repellendus, libero ratione id iste eveniet quia maiores repellat ipsam eaque vero tempore porro unde, sit accusamus aliquid dicta corporis, modi magnam sequi nulla voluptates odit officiis. Veniam officia tempore mollitia incidunt saepe tenetur explicabo inventore nulla quam quae nihil repellat asperiores distinctio est accusamus, quidem vero quasi quod beatae quo soluta laborum iusto rerum repellendus. Facere ipsa debitis ut magnam quaerat sapiente eligendi veniam aperiam facilis molestias officia doloremque odit doloribus nostrum, iusto obcaecati laborum neque voluptas consequuntur deleniti ratione! Est dolorem reiciendis et! Consequuntur provident dolor a quaerat quas odit, perferendis consectetur vitae culpa odio ad neque, fugit libero cupiditate rerum officiis? Sapiente vel numquam neque quis perferendis delectus animi fugit in, voluptatibus corporis hic doloremque et, deleniti adipisci libero? Cupiditate veniam qui officia corrupti officiis, doloribus vitae? Molestiae porro voluptate, temporibus rem quibusdam dolor consectetur a, tempore ducimus sit cupiditate aut. Vel eos obcaecati expedita suscipit veritatis, reiciendis maxime. Consectetur animi cumque voluptate aliquid quod id dicta expedita. Fugiat optio a vero quaerat laudantium dolores maxime animi porro, nesciunt ad ratione eveniet? Eum quidem perferendis, recusandae, commodi ipsum iste, eius ad similique cumque ratione placeat sint. Tenetur error maxime, sunt maiores possimus laudantium, quos saepe rerum debitis blanditiis minima placeat, reprehenderit vero alias. Consequatur ducimus molestias blanditiis sapiente molestiae pariatur, ea vel porro deleniti culpa sint ipsum dolore assumenda quam officia doloribus laborum mollitia similique vero suscipit dignissimos animi! Temporibus minus fuga, iusto voluptates velit iste reiciendis quasi. Rerum possimus, odio maiores mollitia totam animi tenetur dolores, veritatis ratione consequatur nisi quo dicta? Architecto minima a sint harum illo ea reiciendis. Eius voluptate hic quisquam dolor nihil. Delectus nihil veritatis voluptatem ipsam ex atque quae architecto, reiciendis quidem quaerat at perspiciatis quod laborum nulla, provident iure tenetur sed itaque? Non itaque quaerat saepe suscipit commodi sit nesciunt aliquam alias vitae dolores consequatur deleniti veniam sunt quam nisi ipsum perspiciatis fugit eos, id repellat obcaecati quisquam repellendus, iusto sequi. Eum, voluptatum dolor, sit itaque ullam ratione molestiae voluptate nobis vel non recusandae suscipit alias sunt optio asperiores! Veniam laborum quisquam dicta odit sed rerum omnis explicabo, deleniti ex assumenda, temporibus odio reprehenderit vel. Reprehenderit et molestiae pariatur omnis cumque excepturi voluptates, eaque quia ipsam expedita, maiores voluptatem repudiandae? Dolor assumenda, nostrum exercitationem unde error corporis, facilis beatae maiores, similique soluta harum atque doloribus id officiis a libero quidem accusamus ea fugiat et itaque nisi hic quos illo. Quia, mollitia harum. Eius in, error cupiditate ab adipisci molestias sed neque facere quasi saepe facilis optio, deleniti atque aliquid exercitationem, impedit nihil laudantium! Delectus, doloremque perspiciatis! Vitae, quam placeat? Quisquam unde dignissimos sed voluptatibus ea hic harum, voluptates beatae possimus libero minus minima quod debitis aliquid nihil. Modi a libero quis maiores accusantium mollitia quibusdam, delectus non, ab, magni saepe accusamus culpa! Culpa eius, voluptatum sapiente reiciendis quam excepturi cumque eaque ex asperiores nam, ut sit quae reprehenderit aperiam non eligendi soluta suscipit consectetur ipsa obcaecati voluptate exercitationem illum. Cumque ipsam qui dolore itaque. Nemo pariatur, sapiente voluptates est vel sit dolorem temporibus magnam vitae fugit cumque ab, impedit officiis? Ipsa iusto eligendi modi ullam, dolorem at nihil? Nemo delectus ipsa doloribus quidem nulla praesentium, necessitatibus repellendus culpa ipsum consequuntur voluptate non eveniet magni consectetur voluptatem, libero aut atque debitis sit ullam maiores temporibus laborum unde. Ipsa voluptatibus voluptate, voluptatem quibusdam magni earum ad commodi. Deserunt accusantium ad neque tenetur quisquam vel nisi nulla obcaecati dolorum! Voluptates voluptate sint amet, facere, quia nostrum assumenda explicabo quod dignissimos nihil eum nulla, temporibus ea? Quae ea cumque dolore at quas debitis recusandae exercitationem harum, culpa molestiae molestias odit qui expedita ipsum quos esse eaque veritatis dolorem sint delectus dolores ad maxime iste quaerat! Neque omnis nulla cumque quam accusamus aliquid minus cupiditate repellat! Recusandae a autem hic ratione, aperiam porro quas fugiat sed quod laudantium error ab vero, minima eum. Ea labore eveniet, doloremque esse earum possimus. Voluptates natus deleniti at molestiae libero hic eaque laudantium ipsam cum impedit, beatae maiores, sunt, ipsa quis architecto voluptatibus placeat itaque assumenda magnam doloribus voluptatem. Tenetur qui magnam rem sapiente vel, quis ipsum, ea quas deserunt maxime dolor aspernatur impedit fuga porro voluptates possimus minima officiis earum praesentium eius quae iste exercitationem asperiores nesciunt. Quo similique ut sunt commodi quas fuga adipisci, facere deserunt illo odio consequatur in unde neque nemo rerum. Facilis eos saepe quo error dolore nulla aut molestias consequatur odio perferendis voluptates repudiandae, possimus iusto deserunt sapiente mollitia aspernatur nam numquam adipisci veniam quis. Asperiores optio ipsam neque, repudiandae suscipit incidunt doloremque quod ut eaque excepturi minus vel quisquam voluptatem, enim, odio itaque aperiam illum aliquam sapiente id ab. Unde labore, odit dolores porro quaerat minus officia odio commodi molestiae reprehenderit ipsum sint sapiente, fuga laudantium provident ex sequi quia illo. Corporis perferendis facere ab blanditiis perspiciatis! Consequatur aliquam consequuntur ratione quia nam optio veniam architecto corrupti laudantium. Modi itaque obcaecati iusto eum delectus? Sit nisi nam incidunt corrupti distinctio officia officiis nulla quaerat sapiente quam tempore totam tenetur itaque doloremque repudiandae quisquam saepe, veritatis, fugit culpa natus iusto doloribus a! Incidunt dolor ducimus praesentium commodi quibusdam consequatur animi, ea neque eligendi cum odit non, nobis officia blanditiis numquam!
+    </div>
+
+    <div class="main">
+        <div class="child">
+            <!-- <div class="childs"> -->
+                hey this is div using percentage in height and width
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+</html>
